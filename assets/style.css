@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+
+}
+body{
+    background-color: white;
+}
+header{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #302e2e;
+    display: flex;
+    /*ensures that the name and the menu is seperated*/
+    justify-content: space-between;
+}
+header nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #40E0D0;
+    
+}
+.flex-item span{
+    width: 50%;
+    padding: 5px 5px 5px;
+    background-color: #40E0D0;
+    margin: auto;
+}
+header nav ul{
+    list-style-type:none;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+   
+}
+a{
+    color: #40E0D0;
+    
+}
+.flex-item{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.hero{
+    background-image: url('../assets/images/pexels-james-wheeler-417074.jpg');
+    background-size: cover;
+    display:flex;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+    background-attachment:fixed;
+    background-position: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+}
+.hero-cta{
+    width:55%;
+    text-align: right;
+    margin:4%;
+    font-size:18px;
+    line-height:3.0;
+   
+}
+.hero-cta span{
+    width:40%;
+    padding: 10px 8px 20px;
+    background-color:#40E0D0 ;
+    color: #302e2e;
+    font-weight: bold;
+    font-size: 20px;
+    align-items:center;
+    
+}
+.flex-column{
+    display:flex;
+}
+
+/*About Me Section*/
+.about-me{
+
+}
+.Personal-info{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4a35a3;
+    width: 50%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+/*How do I add the spacing before my name*/
+/*the next part would this be a hero section or is it part of the header*/
+/* is the Contact Me, part of the footer or part of the main */
+/* how do I do the About Me Section and line*/
+/*how do I move my name down*/
+/*how to direct to pdf, do I need to place it into my assets folder and use the path?*/
