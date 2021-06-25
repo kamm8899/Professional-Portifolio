@@ -2,14 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin:0;
-
 }
-body{
+body {
     background-color: white;
-}
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
 header{
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #302e2e;
     display: flex;
     /*ensures that the name and the menu is seperated*/
@@ -19,7 +19,7 @@ header{
 header nav{
     padding-top: 15px;
     margin-right: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     color: #40E0D0;
     
@@ -59,7 +59,7 @@ a{
     flex-wrap:wrap;
     background-attachment:fixed;
     background-position: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
    
     
 }
@@ -83,10 +83,11 @@ a{
 }
 .flex-row{
     display:flex;
+    /*flex-wrap: wrap;
+    justify-content: space-between;*/
 }
 
 .section-title{
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 30px;
         display:flex;
@@ -103,7 +104,6 @@ a{
     font-size: 16px;
     line-height: 1.5;
     color: rgb(107, 108, 109);
-    
     margin: 30px 0;
     display:flex;
     flex-wrap:wrap;
@@ -121,34 +121,65 @@ a{
     margin:0 auto;
     width:80%;
 }
-.run-buddy{
-    width: 100%;
+#contact-me{
+    width: 95%;
     margin: 0 auto;
+}
+.work{
+    width: 100%;
+
+    /*margin: 0 auto;*/
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    align-items:center;
+
     
 }
-.run-buddy img{
+.work img{
     border: 1px solid #40E0D0;
     width:100%;
     display:flex;
     display:wrap;
     justify-content:space-around;
+    flex: 1;
+    
 }
-.run-buddy span{
+.work span{
     width:15%;
     padding: 10px 8px 20px;
     background-color: gray;
     color: #302e2e;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     align-items:center;
+    flex: 12;
+
+}
+.contact-info{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    list-style: none;
+    
+}
+.contact-info span{
+    width:100%;
+    padding: 10px 8px 20px;
+    color: #2633ad;
+    font-weight: bold;
+    font-size: 15px;
+    display:flex;
+    flex-wrap:wrap;
+
+
 
 }
 
-
-
-
-
+/*Problems with my containers*/ 
+/*how do I fix the title to be part of my image*/
+/*How do I get it to wrap*/
+/*Contact list why is it showing not as a list*/
 
