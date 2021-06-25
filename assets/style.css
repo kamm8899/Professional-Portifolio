@@ -83,10 +83,6 @@ a{
 }
 .flex-row{
     display:flex;
-    justify-content: flex-end;
-    
-
-    
 }
 
 .section-title{
@@ -120,6 +116,35 @@ a{
 #about-me{
     margin:0 auto;
     width: 80%;
+}
+#work{
+    margin:0 auto;
+    width:80%;
+}
+.run-buddy{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+}
+.run-buddy img{
+    border: 1px solid #40E0D0;
+    width:100%;
+    display:flex;
+    display:wrap;
+    justify-content:space-around;
+}
+.run-buddy span{
+    width:15%;
+    padding: 10px 8px 20px;
+    background-color: gray;
+    color: #302e2e;
+    font-weight: bold;
+    font-size: 20px;
+    align-items:center;
+
 }
 
 
