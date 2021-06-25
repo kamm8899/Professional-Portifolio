@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin:0;
+    margin:0 auto;
 }
 body {
     background-color: white;
     font-family: Helvetica, Arial, sans-serif;
+
   }
 
 header{
@@ -95,9 +96,19 @@ a{
         color:#2633ad;
         padding: 20px;
         /*makes sure the second word starts at the end*/
-        text-align: end;
-       
+        text-align: end; 
+        margin: 0 auto;   
          
+}
+.img-headshot{
+    width: 150px; 
+    height:200px;
+    background-image: url(../assets/images/Headshot.jpeg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    padding:
+   
+    
 }
 
 .Personal-info{
@@ -182,4 +193,4 @@ a{
 /*how do I fix the title to be part of my image*/
 /*How do I get it to wrap*/
 /*Contact list why is it showing not as a list*/
-
+/* how do I move the photo over*/
