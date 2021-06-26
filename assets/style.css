@@ -1,12 +1,11 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin:0 auto;
+    margin:0;
 }
 body {
     background-color: white;
     font-family: Helvetica, Arial, sans-serif;
-
   }
 
 header{
@@ -27,9 +26,10 @@ header nav{
 }
 .flex-item span{
     width: 50%;
-    padding: 5px 5px 5px;
+    padding: 5px 45px 5px;
     background-color: #40E0D0;
     margin: auto;
+    text-align:right;
 }
 header nav ul{
     list-style-type:none;
@@ -43,10 +43,15 @@ header nav ul li{
     margin-left: 25px;
    
 }
-a{
+.links{
     color: #40E0D0;
     
 }
+a:visited{
+    color: #40E0D0
+
+}
+
 .flex-item{
     font-size: 40px;
     font-weight: bold;
@@ -85,7 +90,7 @@ a{
 .flex-row{
     display:flex;
     /*flex-wrap: wrap;
-    justify-content: space-between;*/
+   /* justify-content: space-between;*/
 }
 
 .section-title{
@@ -94,10 +99,13 @@ a{
         display:flex;
         flex-wrap: wrap;
         color:#2633ad;
-        padding: 20px;
+        padding: 20px 20px;
         /*makes sure the second word starts at the end*/
-        text-align: end; 
-        margin: 0 auto;   
+        text-align:end;
+        border-right: 5px solid #2633ad; 
+        width:15%;
+        justify-content:flex-end;
+        
          
 }
 .img-headshot{
@@ -106,9 +114,8 @@ a{
     background-image: url(../assets/images/Headshot.jpeg);
     background-size:100%;
     background-repeat: no-repeat;
-    padding:
+    margin: 5px auto;
    
-    
 }
 
 .Personal-info{
@@ -119,31 +126,23 @@ a{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
-    border-left: 5px solid #2633ad;
     padding: 0 0 0 20px;
   
 
 }
-#about-me{
-    margin:0 auto;
+#about-me, #contact-me, #work{
+    margin:50px auto;
     width: 80%;
 }
-#work{
-    margin:0 auto;
-    width:80%;
-}
-#contact-me{
-    width: 95%;
-    margin: 0 auto;
-}
-.work{
-    width: 100%;
 
+.work-container{
     /*margin: 0 auto;*/
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    align-items:center;
+    justify-content:space-between;
+    padding: 0 0 0 20px;
+    
+
 
     
 }
@@ -156,41 +155,73 @@ a{
     flex: 1;
     
 }
-.work span{
-    width:15%;
+.work-title{
+    width:30%;
     padding: 10px 8px 20px;
     background-color: gray;
-    color: #302e2e;
+    color:#38393b;
     font-weight: bold;
     font-size: 15px;
     align-items:center;
-    flex: 12;
+    margin: 0  15px 15px 0
+    font-size: 12px;
 
 }
+
 .contact-info{
-    width: 100%;
-    margin: 0 auto;
+   
+
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    list-style: none;
+    padding: 0 0 0 20px;
     
 }
-.contact-info span{
-    width:100%;
-    padding: 10px 8px 20px;
-    color: #2633ad;
-    font-weight: bold;
-    font-size: 15px;
+.contact-info ul{
+    list-style-type:none;
     display:flex;
     flex-wrap:wrap;
-
-
-
+    align-items:flex-start;
+    list-style: none;
+}
+.contact-info ul li{
+    display: inline-block;
+    margin-left: 50px;
+    color:#2633ad;
+    padding: 20px 20px 50px 15px;
+    
+   
+}
+.work{
+    width:49%;
+    height:200px;
+    margin: 5px 0;
+    border: 5px solid turquoise;
+    display:flex;
+    align-items:flex-end;
+    
+}
+.run-buddy{
+    background-image: url('./images/Run Buddy Image.png');
+    width: 100%;
+    height: 400px;    
+}
+.horiseon{
+    background-image:url('./images/Horiseon IMG.png'); 
+}
+.movie-analytics{
+    background-image:url('./images/pexels-felix-mittermeier-956981.jpg');
+}
+.placeholder-1{
+    background-image: url('images/pexels-pixabay-220067.jpg');
+}
+.placeholder-2{
+    background-image: url('./images/pexels-pixabay-247671.jpg');
+}
+.content{
+    width: 75%;
 }
 
-/*Problems with my containers*/ 
-/*how do I fix the title to be part of my image*/
-/*How do I get it to wrap*/
-/*Contact list why is it showing not as a list*/
-/* how do I move the photo over*/
+
+/*How do my links open up to the correct link*/
+/*
