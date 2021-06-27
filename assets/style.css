@@ -63,7 +63,7 @@ a:visited{
     display:flex;
     justify-content:flex-end;
     flex-wrap:wrap;
-    background-attachment:fixed;
+    background-attachment:scroll;
     background-position: 100%;
     font-family: Helvetica, Arial, sans-serif;
    
@@ -114,7 +114,7 @@ a:visited{
     background-image: url(../assets/images/Headshot.jpeg);
     background-size:100%;
     background-repeat: no-repeat;
-    margin: 5px auto;
+    margin: 0 auto;
    
 }
 
@@ -129,9 +129,13 @@ a:visited{
   
 
 }
-#about-me, #contact-me, #work{
+#contact-me, #work{
     margin:50px auto;
     width: 80%;
+}
+#about-me{
+    width: 80%;
+    margin:20px auto;
 }
 
 .work-container{
@@ -209,19 +213,23 @@ a:visited{
  
 }
 .horiseon{
-    background-image:url('./images/Horiseon IMG.png'); 
+    background-image:url('./images/Horizeon3.png'); 
     display:flex;
     align-items:flex-end;
     background-size: 100% 100%; 
+    background-attachment: scroll;
 }
 .movie-analytics{
     background-image:url('./images/pexels-felix-mittermeier-956981.jpg');
+    background-size: 100%;
 }
 .placeholder-1{
     background-image: url('images/pexels-pixabay-220067.jpg');
+    background-size: 100% 100%;
 }
 .placeholder-2{
     background-image: url('./images/pexels-pixabay-247671.jpg');
+    background-size: 100% 100%;
 }
 .content{
     width: 75%;
@@ -289,7 +297,7 @@ a:visited{
         color:turquoise; 
     }
     .img-headshot{
-        width: 100px;
+        width: 200;
         height:150px;
     }
     .section-title{
@@ -311,34 +319,112 @@ a:visited{
    }
     /*media query 575 and less*/
     @media screen and (max-width: 575px){
+        .flex-row{
+            flex-direction: column;
+        }
+        .flex-item{
+            font-size: 10px;
+            width: 30%;
+        }
+        .flex-item span{
+            padding: 5px 0;
+        }
+        .content{
+            width: 100%;
+        }
+        .hero{
+            background-attachment:scroll;
+        }
+        .hero-cta{
+            width: 80%;
+            margin: 2%;
+            line-height: 6.0;
+
+        }
         .hero-cta span{
             font-size: 10px;
+
         }
         .work-title{
             padding: 0 0;
-            font-size: 5px;
+            font-size: 6px;
         }
         .work{
             height: 65px;
             
         }
+        .work-container{
+            padding: 0;
+        }
         .section-title{
             font-size: 10px;
+            width: 100%;
+            justify-content:center;
+            border-bottom: 5px solid #2633ad;
+            border-right:none;
         }
         .personal-info{
             font-size: 8px;
+            padding: 15px 0;
         }
         .contact-info{
             font-size: 8px;
+            
         }
         .contact-info ul li{
             padding: 20px 0 50px 0;
+            flex: 1;
         }
+        .contact-info ul{
+            width: 100%;
+        }
+
         .img-headshot{
             background-size: 80%;
         }
+        #about-me{
+            margin: 0 auto;
+        }
+        #work, #contact-me{
+            margin: 15px auto;
+        }
+        header nav{
+            padding-top: 0;
+            font-size: 6px;
+            margin: 0 auto;
+        }
+        .run-buddy{
+            background-size: 80%;
+            background-image: no-repeat;
+        }
+        .horiseon{
+            background-size: 99%;
+        }
+/* screen 400px to 300px*/
+        @media screen and (max-width:400px){
+            .header nav{ font-size: 4px;
+            }
+            .flex-item{
+                font-size: 6px;
+                width:20%;
+            }
+            .hero-cta{
+                width: 100%;
+            }
+            .work{
+                width: 100%;
+            }
+            .run-buddy{
+                background-image: no-repeat;
+                background-size:100%;
+            }
+            .contact-info{
+                font-size: 6px;
+            }
+
+        }
+
     }
 
 
 
-/*How to do the resizing*/
