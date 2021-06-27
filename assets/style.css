@@ -118,7 +118,7 @@ a:visited{
    
 }
 
-.Personal-info{
+.personal-info{
     font-size: 16px;
     line-height: 1.5;
     color: rgb(107, 108, 109);
@@ -227,7 +227,119 @@ a:visited{
 .content{
     width: 75%;
 }
-/*screenshot extension*/
 
-/*How do my links open up to the correct link*/
+/*Media Query for resizing*/
+/*Smaller desktops 980px to 769px*/
+@media screen and (max-width: 980px){
+    .flex-item{
+        font-size: 25px;
+    }
+    /* how do I change the nav font*/
+    .header nav{
+        font-size: 10px;
+
+    }
+    .hero-cta span{
+        font-size:15px;
+    }
+    .run-buddy{
+       background-image:70% 70%;
+       height: 300px;
+    }
+    .work{
+        height: 135px; 
+    }
+   .work-title{
+       font-size: 10px;
+       margin: 0 0 0 0;
+       background-color:transparent;
+       color:rgb(0, 204, 255);
+   }
+   
+
+   .contact-info{
+       font-size: 12px;   
+   } 
+   .contact-info ul li{
+    
+    margin-left: 20px;
+   }
+}
+  
+
+/*Media Query for smaller IPAD from 769px to 575px*/
+   @media screen and (max-width:769px){
+    .flex-item{
+        font-size: 15px;
+        width: 40%;  
+    } 
+    .flex-item span{
+        padding: 5px 20px 5px 5px;
+    }
+    /*resizing not working*/
+    header nav{
+        font-size: 10px;
+    }
+    /*not working*/
+    .hero-cta{
+        width: 70%;
+        font-size: 10px;
+    }
+    .hero-cta span{
+        background-color: transparent;
+        color:turquoise; 
+    }
+    .img-headshot{
+        width: 100px;
+        height:150px;
+    }
+    .section-title{
+        font-size: 15px;
+        padding: 15px 15px;
+        border-right: 3px solid #2633ad;
+    }
+    .personal-info{
+        font-size: 12px;
+        margin: 0 0;
+    }
+    .contact-info{
+        padding: 0 0 0 0;
+        font-size: 10px;
+    }
+    .contact-info ul li{
+        padding: 15px 10px 50px 15px;
+    }
+   }
+    /*media query 575 and less*/
+    @media screen and (max-width: 575px){
+        .hero-cta span{
+            font-size: 10px;
+        }
+        .work-title{
+            padding: 0 0;
+            font-size: 5px;
+        }
+        .work{
+            height: 65px;
+            
+        }
+        .section-title{
+            font-size: 10px;
+        }
+        .personal-info{
+            font-size: 8px;
+        }
+        .contact-info{
+            font-size: 8px;
+        }
+        .contact-info ul li{
+            padding: 20px 0 50px 0;
+        }
+        .img-headshot{
+            background-size: 80%;
+        }
+    }
+
+
+
 /*How to do the resizing*/
