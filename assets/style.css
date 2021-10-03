@@ -203,6 +203,15 @@ a:visited{
     align-items:flex-end;
     
 }
+.deepBlue{
+    background-image: url('./images/DeepBlue.png');
+    width: 100%;
+    height: 300px;
+    display:flex;
+    align-items:flex-end;
+    background-size: 100% 100%; 
+ 
+}
 .nationalTrip{
     background-image: url('./images/National-Trip-Planner.png');
     width: 100%;
